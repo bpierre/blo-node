@@ -13,11 +13,7 @@ Or clone this repository.
 blo works as a connect middleware.
 It takes one parameter, which is your blog directory.
 
-Install it with:
-
-    $ npm install blo
-
-Create a demo blog:
+You can create a demo blog with the `blo` utility:
 
     $ node node_modules/blo/bin/blo skel
     $ npm install .
