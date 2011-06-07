@@ -3,18 +3,19 @@
   "description": "HTML blog system",
   "tags": ["node","blog"],
   "version": "0.1.0",
-  "author": "Pierre Bertet <bonjour@pierrebertet.net>",
+  "author": "Pierre Bertet <bonjour@pierrebertet.net> (http://pierrebertet.net)",
   "repository": {
     "type": "git",
     "url": "http://github.com/bpierre/blo.git"
   },
   "bugs": "http://github.com/bpierre/blo/issues",
-  "engines": ["node >= 0.4.0"],
+  "engines": { "node": ">= 0.4.1 < 0.5.0" },
   "main": "lib/blo.js",
   "dependencies": {
     "connect": ">= 1.4.0 < 2.0.0",
-    "dust": ">= 0.3.0",
-    "jsdom": ">= 0.2.0",
-    "step": ">= 0.0.4"
-  }
+    "dust": ">= 0.3.0 < 1.0.0",
+    "jsdom": ">= 0.2.0 < 1.0.0",
+    "step": ">= 0.0.4 < 1.0.0"
+  },
+  "bin": { "blo": "./bin/blo" }
 }
