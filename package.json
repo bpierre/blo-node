@@ -2,7 +2,7 @@
   "name": "blo",
   "description": "HTML blog system",
   "tags": ["node","blog"],
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Pierre Bertet <bonjour@pierrebertet.net> (http://pierrebertet.net)",
   "repository": {
     "type": "git",
