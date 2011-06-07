@@ -1,8 +1,14 @@
 # blo
 
-blo is a simple blog system: no database required, just plain old HTML files.
+blo is a simple blogging system: no database required, just plain old HTML files.
 
 ## Install
+
+Install it via npm:
+
+    npm install connect blo
+
+Or clone this repository.
 
 blo works as a connect middleware.
 It takes one parameter, which is your blog directory.
