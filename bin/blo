@@ -1,0 +1,108 @@
+#!/usr/bin/env node
+
+var cwd = process.cwd(),
+    util = require('util'),
+    path = require('path'),
+    fs = require('fs'),
+    spawn = require('child_process').spawn;
+
+/**
+ * Usage documentation.
+ */
+var usage = ''
+    + 'Usage: blo [command]\n'
+    + '\n'
+    + 'Commands:\n'
+    + ' skel - Create files needed to run blo\n'
+    // + ' clear-cache, cc - Clear cache\n'
+    ;
+
+/**
+ * User confirmation with 'y'.
+ */
+function confirm(question, yesCallback, noCallback) {
+  process.stdout.write(question + ' [yn] ');
+  process.stdin.setEncoding('utf8');
+  process.stdin.once('data', function(data){
+    if (data === 'y\n') {
+      yesCallback();
+    } else {
+      noCallback();
+    }
+  }).resume();
+}
+
+/**
+ * Clear cache.
+ */
+function clearCache() {
+  // TODO
+}
+
+/**
+ * Create demo files.
+ */
+function skel() {
+  
+  function copy(source, dest, callback) {
+    var cp = spawn('cp', ['-r', source, dest]);
+    cp.stdout.on('data', function (data) {
+      grep.stdin.write(data);
+    });
+    cp.stderr.on('data', function (data) {
+      console.log('error: ' + data);
+    });
+    cp.on('exit', function (code) {
+      callback();
+    });
+  }
+  
+  confirm('Are you sure? All existing files will be overriden.',
+    function() {
+      var skelPath =  path.normalize(__dirname + '/../skel');
+      fs.readdir(skelPath, function(err, files) {
+        var i = files.length,
+            callbackCount = files.length;
+        while (i--) {
+          copy(skelPath + '/' + files[i], cwd + '/' + files[i], function(){
+            callbackCount -= 1;
+            if (callbackCount === 0) {
+              process.stdout.write('Done.\n');
+              process.exit(0);
+            }
+          });
+        }
+      });
+    },
+    function() {
+      process.exit(1);
+    });
+}
+
+/**
+ * Parse command line arguments.
+ */
+function parseArguments(args) {
+  
+  function exit() {
+    util.error(usage);
+    process.exit(1);
+  }
+  
+  if (args.length === 0) { // No args given.
+    exit();
+  }
+  
+  if (args[0] === 'skel') { // Skeleton
+    skel();
+    
+  // Cache: TODO
+  // } else if (['clear-cache', 'cc'].indexOf(args[0]) !== -1) {
+  // clearCache();
+    
+  } else {
+    exit();
+  }
+}
+
+parseArguments(process.argv.slice(2));

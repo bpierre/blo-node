@@ -1,0 +1,12 @@
+{>base/}
+
+{<title}{blogName}{/title}
+
+{<content}
+		<section>
+			<h1>Articles</h1>
+			<ul>{#articles}
+				<li><a href="/{permalink}">{metas.title}</a></li>{/articles}
+			</ul>
+		</section>
+{/content}
