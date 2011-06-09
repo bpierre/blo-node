@@ -4,6 +4,10 @@
   "tags": ["node","blog"],
   "version": "0.2.0",
   "author": "Pierre Bertet <bonjour@pierrebertet.net> (http://pierrebertet.net)",
+  "contributors": [
+    { "name": "Pierre Bertet", "email": "bonjour@pierrebertet.net" },
+    { "name": "Raphaël Bastide", "email": "bonjour@raphaelbastide.com" }
+  ],
   "repository": {
     "type": "git",
     "url": "http://github.com/bpierre/blo.git"
