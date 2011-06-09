@@ -1,0 +1,93 @@
+/*
+Theme Name: Default
+Theme URI: https://github.com/bpierre/blo
+Description: A blo theme
+Version: 1.0
+Author: Pierre Bertet - Raphael Bastide
+*/
+
+/* YUI 3 Reset
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License: http://developer.yahoo.net/yui/license.txt
+version: 3.0.0, build: 1549 */
+html{color:#000;background:#FFF;} body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;} table{border-collapse:collapse;border-spacing:0;} fieldset,img{border:0;} li{list-style:none;} caption,th{text-align:left;} h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;} q:before{content:'« ';} q:after{content:' »';} abbr,acronym{font-variant:normal;border-bottom: 1px dotted;cursor:help;} sup{vertical-align:text-top;} sub{vertical-align:text-bottom;} input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;} input,textarea,select{*font-size:100%;} legend{color:#000;}
+
+/* HTML5 reset */
+header,footer,nav,article,section,legend,figure{display:block;}figure{margin:0;padding:0;}
+
+/* Buttons reset */
+button{position:relative;overflow:visible;margin:0;padding:0;background:transparent;border:0;cursor:pointer;} button::-moz-focus-inner{padding:0;border:0;} @media screen and (-webkit-min-device-pixel-ratio:0) {	button span{margin-top:-1px;}}
+
+/* Main Structure */
+body,button,input,textarea{font:15px arial, Verdana, Helvetica, sans-serif;color:#000;}
+header{width:600px;margin:50px auto;border-bottom:1px dotted #1D19FF;overflow:hidden; padding:0 0 2px 0;}
+header h1, header h2{display:block; width:50%; float:left;}
+header h1 a, header h1 a:visited{color:#1D19FF;}
+header h1 a:hover{color:#1D19FF;}
+header h2{text-align:right; font-size:12px;padding-top:4px;}
+header h2 a{color:#777;}, header h2 a:hover{color:#111;}
+body{width:600px;margin:0 auto;}
+
+/* Article */
+article{margin:20px 0;}
+article time, article figcaption, caption{ left:-120px; font-size:12px; text-align:right; width:100px; display:block; line-height:13px; }
+
+figure{position:relative;}
+article figcaption{ position:absolute; top:0px; color:#636363;}
+
+article time{position:relative; top:-13px; margin-bottom:6px;}
+article p time{position:static; display:inline; top:0px; margin-bottom:0px;}
+article h1:first-child{margin:0 0 0 0;}
+article h1, article h2, article h3, article h4, body.home section h1{
+margin:35px 0 20px 0; display:block;}
+
+article ul{padding:0 0 10px 32px;}
+article ol{padding:0 0 10px 56px;}
+article ol li{list-style:decimal;}
+article ul li:before{content:"‒"; margin:0 16px 0 0;}
+article img{display:block; margin:10px auto;}
+
+/* Main Typography */
+h1{color:black;}
+p, code, pre, dd{line-height:21px;margin:0 0 13px 0;}
+p {text-align:justify;}
+a{text-decoration:none;color:#1D19FF;}
+a:hover{color:#D80000;}
+a:visited{color:#6851B5;}
+a:active, header h1 a:active{color:black;}
+code, pre{ color:#B50045; border-left:1px dashed #B50045;padding-left:18px; position:relative; display:block; left:-19px;}
+header h2, code, pre, time, footer .center, footer .right{font-family:cousine, courrier new, monospace;}
+time{color:#2DB201;font-size:12px;}
+dt{background:#FFE8B5;padding-left:3px;}
+dd{margin:0 0 10px 0;border-left:2px solid #FFE8B5;padding-left:3px;}
+
+/* Footer */
+footer{margin:40px 0 10px 0;padding:5px 0 0 0;overflow:hidden;border-top:1px dotted #777;}
+footer .left{float:left; display:block; width:33%;}
+footer .center{float:left; text-align:center; display:block; width:33%;}
+footer .right{float:right; text-align:right; display:block; width:33%;}
+footer .center, footer .right{color:#777;font-size:12px;padding-top:4px;}
+
+/* Table */
+table { border-collapse: collapse; width: 100%; color:#0058BC; margin:0 0 20px 0;}
+caption { font-size:12px;position:relative;top:-10px;}
+thead th { border-bottom: 1px dotted #0058BC; padding:2px 0 1px 0; text-transform:uppercase; font-weight: normal;}
+tbody tr { background-color:#fff; border-bottom: 1px dotted #AAA;}
+tbody td { padding:5px; text-align:left;}
+tbody th { text-align:left; padding:2px;}
+
+/* Media */
+@media screen and (max-width: 870px) { 
+	article time, article figcaption, caption{
+	position:static;
+	text-align:left;
+	margin:2px 0 5px 0;
+	}
+	article figcaption{width:100%;}
+	caption{display:inline; width:100%;}
+}
+@media screen and (max-width: 720px) { 
+	header,body{width:300px;}
+	article figcaption{width:100%;}
+	caption{display:inline; width:100%;}
+}
