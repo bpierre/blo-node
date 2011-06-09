@@ -157,3 +157,7 @@ Example:
       }
     };
 
+## Contributors
+
+  * Pierre Bertet ([bpierre](https://github.com/bpierre))
+  * Raphaël Bastide ([raphaelbastide](https://github.com/raphaelbastide))
