@@ -6,13 +6,16 @@
 		<link href="http://fonts.googleapis.com/css?family=Cousine:regular,bold" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="/styles/main.css" type="text/css" media="all" />
 	</head>
-	<body>
+	<body{+bodyclass}{/bodyclass}>
 		<header role="banner">
 			<h1><a href="/">{blogName}</a></h1>
+			<h2><a href="/about">about</a></h2>
 		</header>
 		{+content}{/content}
 		<footer id="footer">
-			<a href="https://github.com/bpierre/blo/">blo</a>!
+			<span class="left"><a href="https://github.com/bpierre/blo/">blo</a>!</span>
+			<span class="center">Last update:<time>Yesterday</time></span>
+			<span class="right"><a href="/">Credits</a></span>
 		</footer>
 	</body>
 </html>
