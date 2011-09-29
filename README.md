@@ -1,5 +1,7 @@
 # blo
 
+![blo](https://github.com/bpierre/blo/raw/master/graphics/logo/logo-160.png)
+
 blo is a simple blogging system: no database required, just plain old HTML files.
 
 ## Install
