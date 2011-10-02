@@ -16,10 +16,12 @@
   "engines": { "node": ">= 0.4.1 < 0.5.0" },
   "main": "lib/blo.js",
   "dependencies": {
-    "connect": ">= 1.4.0 < 2.0.0",
+    "connect": ">= 1.6.0 < 2.0.0",
     "dust": ">= 0.3.0 < 1.0.0",
-    "jsdom": ">= 0.2.0 < 1.0.0",
+    "jsdom": ">= 0.2.1 < 1.0.0",
     "step": ">= 0.0.4 < 1.0.0"
   },
+  "devDependencies": {
+  }
   "bin": { "blo": "./bin/blo" }
 }
