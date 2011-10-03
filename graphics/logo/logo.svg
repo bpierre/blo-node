@@ -7,47 +7,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="290.24503"
-   height="178.75659"
-   id="svg2"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
-   sodipodi:docname="blo_logo_final.svg">
+   width="290.84503"
+   height="179.35658"
+   id="svg2">
   <defs
      id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="2.2253642"
-     inkscape:cx="145.53373"
-     inkscape:cy="79.143394"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:snap-grids="false"
-     inkscape:window-width="1328"
-     inkscape:window-height="837"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0">
-    <inkscape:grid
-       type="xygrid"
-       id="grid2985"
-       empspacing="5"
-       visible="true"
-       enabled="true"
-       snapvisiblegridlinesonly="true" />
-  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -61,31 +26,19 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Calque 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-219.84375,-261.125)">
+     transform="translate(-219.54375,-260.825)"
+     id="layer1">
     <path
-       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#1d19ff;fill-opacity:1;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
        d="m 272.96875,261.125 -18.125,7.4375 0,54.28125 c -20.66869,9.94791 -35,31.10975 -35,55.5 0,33.886 27.67657,61.53125 61.5625,61.53125 33.88593,0 61.53125,-27.64525 61.53125,-61.53125 0,-33.8859 -27.64532,-61.5625 -61.53125,-61.5625 -2.85583,0 -5.68288,0.21359 -8.4375,0.59375 l 0,-47.1875 0,-9.0625 z m 8.4375,73.75 c 24.10397,0 43.4375,19.36485 43.4375,43.46875 0,24.104 -19.33353,43.4375 -43.4375,43.4375 -2.88216,0 -5.71635,-0.28426 -8.4375,-0.8125 l 0,-85.28125 c 2.72115,-0.52824 5.55534,-0.8125 8.4375,-0.8125 z m -26.5625,9 0,68.90625 c -10.291,-7.92539 -16.90625,-20.36023 -16.90625,-34.4375 0,-14.07938 6.61253,-26.54352 16.90625,-34.46875 z"
        id="path3886"
-       inkscape:connector-curvature="0" />
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#1d19ff;fill-opacity:1;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
     <path
-       inkscape:connector-curvature="0"
-       id="path3888"
        d="m 448.538,316.77999 c -33.88594,0 -61.55078,27.6649 -61.55078,61.5508 0,33.886 27.66484,61.5508 61.55078,61.5508 33.88593,0 61.55078,-27.6648 61.55078,-61.5508 0,-33.8859 -27.66485,-61.5508 -61.55078,-61.5508 z m 0,18.1016 c 24.10396,0 43.44922,19.3453 43.44922,43.4492 0,24.104 -19.34526,43.4492 -43.44922,43.4492 -24.10397,0 -43.44922,-19.3452 -43.44922,-43.4492 0,-24.1039 19.34525,-43.4492 43.44922,-43.4492 z"
-       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#b50045;fill-opacity:1;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
-       inkscape:export-filename="/Users/raphael/Documents/WORK/PERSO/blo/logo/logo.png"
-       inkscape:export-xdpi="287.44739"
-       inkscape:export-ydpi="287.44739" />
+       id="path3888"
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#b50045;fill-opacity:1;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
     <path
-       sodipodi:nodetypes="cccccccc"
-       inkscape:connector-curvature="0"
-       id="path3892"
        d="m 356.27014,268.57129 0,154.1272 0,9.0625 18.09375,0 0,-9.0625 0,-152.5 0,-9.0625 z"
-       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#2db201;fill-opacity:1;stroke:none;stroke-width:18.10000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
-       inkscape:export-filename="/Users/raphael/Documents/WORK/PERSO/blo/logo/logo.png"
-       inkscape:export-xdpi="287.44739"
-       inkscape:export-ydpi="287.44739" />
+       id="path3892"
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#2db201;fill-opacity:1;stroke:none;stroke-width:18.10000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
   </g>
 </svg>
