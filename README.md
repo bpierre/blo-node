@@ -22,15 +22,17 @@ You can create a demo blog with the `blo` utility:
 
 Here is my app.js file:
 
-    var connect = require('connect'),
-        blo     = require('blo');
-    
-    var server = connect(
-      connect.favicon(__dirname + '/public/favicon.ico'),
-      connect.logger(),
-      connect.static(__dirname + '/public'),
-      blo(__dirname)
-    ).listen(3000);
+```js
+var connect = require('connect'),
+    blo     = require('blo');
+
+var server = connect(
+  connect.favicon(__dirname + '/public/favicon.ico'),
+  connect.logger(),
+  connect.static(__dirname + '/public'),
+  blo(__dirname)
+).listen(3000);
+```
 
 You need to create two directories and one file:
 
@@ -46,20 +48,24 @@ Examples:
 
 #### Valid HTML5 file
 
-    <!doctype html>
-    <meta charset="utf-8">
-    <title>My article</title>
-    <h1>My article</h1>
-    <time>2011-04-11</time>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+```html
+<!doctype html>
+<meta charset="utf-8">
+<title>My article</title>
+<h1>My article</h1>
+<time>2011-04-11</time>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+```
 
 #### HTML fragment
 
-    <h1>My article</h1>
-    <time>Wednesday 4th May 2011</time>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+```html
+<h1>My article</h1>
+<time>Wednesday 4th May 2011</time>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+```
 
 ### skin/
 
@@ -72,43 +78,47 @@ Examples:
 
 #### home.html
 
-    <!doctype html>
-    <html>
-    	<head>
-    		<meta charset="utf-8" />
-    		<title>{blogName}</title>
-    	</head>
-    	<body>
-    		<header role="banner">
-    			<h1><a href="/">{blogName}</a></h1>
-    		</header>
-    		<section>
-    			<h1>Articles</h1>
-    			<ul>{#articles}
-    				<li><a href="/{permalink}">{metas.title}</a></li>{/articles}
-    			</ul>
-    		</section>
-    	</body>
-    </html>
+```html
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>{blogName}</title>
+	</head>
+	<body>
+		<header role="banner">
+			<h1><a href="/">{blogName}</a></h1>
+		</header>
+		<section>
+			<h1>Articles</h1>
+			<ul>{#articles}
+				<li><a href="/{permalink}">{metas.title}</a></li>{/articles}
+			</ul>
+		</section>
+	</body>
+</html>
+```
 
 #### article.html
 
-    <!doctype html>
-    <html>
-    	<head>
-    		<meta charset="utf-8" />
-    		<title>{article.metas.title} | {blogName}</title>
-    	</head>
-    	<body>
-    		<header role="banner">
-    			<h1><a href="/">{blogName}</a></h1>
-    		</header>
-    		<section id="article">
-    			<h1>{article.metas.title}</h1>
-    			{article.content|s}
-    		</section>
-    	</body>
-    </html>
+```html
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>{article.metas.title} | {blogName}</title>
+	</head>
+	<body>
+		<header role="banner">
+			<h1><a href="/">{blogName}</a></h1>
+		</header>
+		<section id="article">
+			<h1>{article.metas.title}</h1>
+			{article.content|s}
+		</section>
+	</body>
+</html>
+```
 
 ### config.js
 
@@ -118,46 +128,48 @@ It should be a valid Node module which exports a configuration object.
 
 Example:
 
-    module.exports = {
-      
-      articlesDir: __dirname + '/articles', // Articles directory
-      
-      skinDir: __dirname + '/skin', // Skin (templates) directory
-      
-      blogName: "My blog", // Blog name
-      
-      lang: "FR-fr", // Language
-      
-      /* Do what you want with window here, but call `callback`
-       * with an object containing `title` (String) and `date` (Date) keys.
-       * You can add other keys, they will be available in your templates.
-      */
-      readMetas: function(window, callback) {
-        
-        var dateText = window.document.getElementsByTagName("time")[0].textContent,
-            dateSplit = dateText.split("-");
-        
-        callback(null, {
-          title: window.document.getElementsByTagName("title")[0].textContent,
-          date: new Date(dateSplit[0]-0, dateSplit[1]-1, dateSplit[2]-0)
-        });
-      },
-      
-      /* Again, do what you want, but call `callback` with a string
-       * containing your article. In this example, I remove tags I don’t want.
-      */
-      readArticle: function(window, callback) {
-        var eltsToRemove = ["title", "h1", "time", "meta"],
-            i = eltsToRemove.length;
-        
-        while (i--) {
-          var elt = window.document.getElementsByTagName(eltsToRemove[i])[0];
-          elt.parentNode.removeChild(elt);
-        }
-        
-        callback(null, window.document.body.innerHTML);
-      }
-    };
+```js
+module.exports = {
+  
+  articlesDir: __dirname + '/articles', // Articles directory
+  
+  skinDir: __dirname + '/skin', // Skin (templates) directory
+  
+  blogName: "My blog", // Blog name
+  
+  lang: "FR-fr", // Language
+  
+  /* Do what you want with window here, but call `callback`
+   * with an object containing `title` (String) and `date` (Date) keys.
+   * You can add other keys, they will be available in your templates.
+  */
+  readMetas: function(window, callback) {
+    
+    var dateText = window.document.getElementsByTagName("time")[0].textContent,
+        dateSplit = dateText.split("-");
+    
+    callback(null, {
+      title: window.document.getElementsByTagName("title")[0].textContent,
+      date: new Date(dateSplit[0]-0, dateSplit[1]-1, dateSplit[2]-0)
+    });
+  },
+  
+  /* Again, do what you want, but call `callback` with a string
+   * containing your article. In this example, I remove tags I don’t want.
+  */
+  readArticle: function(window, callback) {
+    var eltsToRemove = ["title", "h1", "time", "meta"],
+        i = eltsToRemove.length;
+    
+    while (i--) {
+      var elt = window.document.getElementsByTagName(eltsToRemove[i])[0];
+      elt.parentNode.removeChild(elt);
+    }
+    
+    callback(null, window.document.body.innerHTML);
+  }
+};
+```
 
 ## Contributors
 
