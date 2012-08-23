@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/bpierre/blo.png)](http://travis-ci.org/bpierre/blo)
 # blo
 
 ![blo](https://github.com/bpierre/blo/raw/master/graphics/logo/logo-160.png)
